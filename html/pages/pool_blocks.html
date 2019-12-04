@@ -162,7 +162,7 @@
         var row = document.createElement('tr');
         row.setAttribute('data-json', jsonString);
         row.setAttribute('data-height', block.height);
-        row.setAttribute('id', 'blockRow' + block.height);
+        row.setAttribute('id', 'blockRow' + block.hash);
         row.setAttribute('title', block.status);
         row.className = blockStatusClasses[block.status];
 		if(block.hash === '') row.className = 'late';
@@ -190,7 +190,7 @@
 
             var blockJson = JSON.stringify(block);
 
-            var existingRow = document.getElementById('blockRow' + block.height);
+            var existingRow = document.getElementById('blockRow' + block.hash);
 
             if (existingRow && existingRow.getAttribute('data-json') !== blockJson){
                 $(existingRow).replaceWith(getBlockRowElement(block, blockJson));

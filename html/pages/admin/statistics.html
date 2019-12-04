@@ -43,7 +43,7 @@
 		$('#totalOwed').text(getReadableCoins(data.totalOwed));
 		$('#totalPaid').text(getReadableCoins(data.totalPaid));
 		$('#totalMined').text(getReadableCoins(data.totalRevenue));
-		$('#profit').text(getReadableCoins(data.totalRevenue - data.totalOwed - data.totalPaid));
+		$('#profit').text(getReadableCoins(data.totalRevenue - data.totalOwed - data.totalPaid - data.fees));
 		$('#averageLuck').html(formatLuck(data.totalDiff, data.totalShares));
 		$('#orphanPercent').text((data.blocksOrphaned / data.blocksUnlocked * 100).toFixed(2));
 		$('#registeredAddresses').text(data.totalWorkers);
@@ -67,7 +67,7 @@
 		<span class="statValue" id="totalMined">...</span>
 	</div>
 	<div class="col-sm-3 color4">
-		<h4>Profit (before tx fees)</h4>
+		<h4>Profit</h4>
 		<span class="statValue" id="profit">...</span>
 	</div>
 	<div class="col-sm-4 color5">

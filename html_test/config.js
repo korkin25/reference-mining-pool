@@ -1,6 +1,6 @@
 var api = "/rpc";
 
-var poolHost = "pool.monerov.online";
+var poolHost = "pool.test.monerov.online";
 
 var cryptonatorWidget = ["BTC-USD"];
 
