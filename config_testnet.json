@@ -1,7 +1,7 @@
 {
     "coin": "monerov_testnet",
     "symbol": "XMVt",
-    "coinUnits": 1000000000000,
+    "coinUnits": 100000000000,
     "coinDifficultyTarget": 60,
 
     "logging": {
@@ -20,7 +20,7 @@
         "enabled": true,
         "clusterForks": 1,
         "variant1block": 0,
-        "poolAddress": "Xty1UHZ4CqR7qso1gdPp8zheLZ5Zrabqgc8fsY7PEL4MC6WHMrRd7CwZwduB9JbyJ2KDwxXoKsL7pgadP4uqoYAP1W3X757uz9",
+        "poolAddress": "Xty18pvDav7KRf8bexeo9S9Vp2LRNhiAqTjRCp6EfHoaBorweej3YjZ8bD5uy2sKMJ3ufAhU6UVhiWxeE7wMXh8W98ujCWVACf",
         "walletBase58AddressPrefix": 23480,
         "walletBase58IntAddressPrefix": 25911,
         "walletBase58SubAddressPrefix": 7737,
@@ -30,13 +30,13 @@
         "ports": [
             {
                 "port": 15831,
-                "difficulty": 50000,
+                "difficulty": 100000,
                 "desc": "CPU",
                 "varDiff": true
             }
         ],
         "varDiff": {
-            "minDiff": 10000,
+            "minDiff": 1000,
             "maxDiff": 10000000,
             "targetTime": 30,
             "variancePercent": 30,
@@ -71,19 +71,19 @@
         "interval": 60,
         "maxAddresses": 10,
         "priority":1,
-        "minPayment_h":            1000000000000,
-        "minPayment_24":            200000000000,
-        "minPayment_imm":         10000000000000,
-        "maxTransactionAmount": 1000000000000000,
-        "denomination":                        1,
-		"feeBuffer":                100000000000
+        "minPayment_h":            100000000000,
+        "minPayment_24":            20000000000,
+        "minPayment_imm":         1000000000000,
+        "maxTransactionAmount": 100000000000000,
+        "denomination":                       1,
+		"feeBuffer":                10000000000
     },
 
     "blockUnlocker": {
         "enabled": true,
         "interval": 20,
         "depth": 60,
-        "poolFee": 0,
+        "poolFee": 1,
         "devDonation": 0,
         "coreDevDonation": 0,
         "extraFeaturesDevDonation":0,

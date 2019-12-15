@@ -1,7 +1,7 @@
 {
     "coin": "monerov",
     "symbol": "XMV",
-    "coinUnits": 1000000000000,
+    "coinUnits": 100000000000,
     "coinDifficultyTarget": 60,
 
     "logging": {
@@ -83,12 +83,12 @@
         "interval": 60,
         "maxAddresses": 10,
         "priority":1,
-        "minPayment_h":            1000000000000,
-        "minPayment_24":            200000000000,
-        "minPayment_imm":         10000000000000,
-        "maxTransactionAmount": 1000000000000000,
-        "denomination":                        1,
-		"feeBuffer":                100000000000
+        "minPayment_h":            100000000000,
+        "minPayment_24":            20000000000,
+        "minPayment_imm":         1000000000000,
+        "maxTransactionAmount": 100000000000000,
+        "denomination":                       1,
+		"feeBuffer":                10000000000
     },
 
     "blockUnlocker": {
