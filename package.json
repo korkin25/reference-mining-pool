@@ -1,11 +1,11 @@
 {
-    "name": "forknote-pool",
+    "name": "xmv-reference-mining-pool",
     "version": "0.0.1",
     "license": "GPL-2.0",
-    "authors": "Matthew Little",
+    "authors": "xmvdev",
     "repository": {
         "type": "git",
-        "url": "https://github.com/forknote/forknote-pool"
+        "url": "https://github.com/xmvdev/reference-mining-pool.git"
     },
     "dependencies": {
         "bignum": "*",
@@ -14,10 +14,10 @@
         "cli-color": "*",
         "dateformat": "*",
         "base58-native": "*",
-        "cryptonight-hashing": "https://github.com/xmvdev/node-cryptonight-hashing.git",
-        "cryptoforknote-util": "https://github.com/MoneroOcean/node-cryptoforknote-util.git"
+        "cryptoforknote-util": "https://github.com/xmvdev/node-cryptoforknote-util.git",
+        "cuckarood29v-hashing": "https://github.com/xmvdev/node-cuckarood29v-hashing.git"
     },
     "engines": {
-        "node": ">=0.10"
+        "node": ">=8.0.0"
     }
 }

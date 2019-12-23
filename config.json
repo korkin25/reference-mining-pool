@@ -18,7 +18,7 @@
 
     "poolServer": {
         "enabled": true,
-        "clusterForks": 4,
+        "clusterForks": 1,
         "variant1block": 0,
         "poolAddress": "XvyVpwaSYzpBbFfsL1fNyXUVCWnbDfKuv8k8GVfYL1mf9GGGBf48Knt63jNtDpkEdBdv61C9yb59uECd1qL2B5XY1Hkjgb4cgw",
         "walletBase58AddressPrefix": 30264,
@@ -29,52 +29,41 @@
         "minerTimeout": 900,
         "ports": [
             {
-                "port": 10000,
-                "difficulty": 10000,
-                "desc": "Low end CPU",
+                "port": 10500,
+                "difficulty": 4,
+                "desc": "Single GPU",
                 "varDiff": true
             },
             {
-                "port": 10001,
-                "difficulty": 50000,
-                "desc": "average CPU",
+                "port": 10501,
+                "difficulty": 16,
+                "desc": "Small RIG",
                 "varDiff": true
             },
             {
-                "port": 10002,
-                "difficulty": 500000,
-                "desc": "high end CPU",
+                "port": 10502,
+                "difficulty": 60,
+                "desc": "Large RIG",
                 "varDiff": true
             }
         ],
         "varDiff": {
-            "minDiff": 10000,
-            "maxDiff": 10000000,
+            "minDiff": 4,
+            "maxDiff": 1000,
             "targetTime": 30,
             "variancePercent": 30,
-            "maxJump": 30
+            "retargetTime": 60,
+            "maxJump": 100
         },
         "fixedDiff": {
             "enabled": true,
             "addressSeparator": "."
-        },
-        "shareTrust": {
-            "enabled": false,
-            "min": 200,
-            "stepDown": 3,
-            "threshold": 10,
-            "penalty": 30
         },
         "banning": {
             "enabled": false,
             "time": 600,
             "invalidPercent": 25,
             "checkThreshold": 30
-        },
-        "slushMining": {
-            "enabled": false,
-            "weight": 120,
-            "lastBlockCheckRate": 1
         }
     },
 
@@ -148,12 +137,6 @@
                 "stepInterval": 1800,
                 "maximumPeriod": 432000
             },
-            "workers": {
-                "enabled": true,
-                "updateInterval": 720,
-                "stepInterval": 1800,
-                "maximumPeriod": 432000
-            },
             "difficulty": {
                 "enabled": true,
                 "updateInterval": 720,
@@ -166,41 +149,23 @@
                 "stepInterval": 150,
                 "maximumPeriod": 21600
             },
-            "difficulty3": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 60,
-                "maximumPeriod": 7200
-            },
-            "price": {
-                "enabled": true,
-                "updateInterval": 720,
-                "stepInterval": 1800,
-                "maximumPeriod": 432000
-            },
             "priceUSD": {
                 "enabled": true,
                 "updateInterval": 720,
                 "stepInterval": 7200,
                 "maximumPeriod": 432000
             },
-            "profit": {
+            "luck": {
                 "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 300,
-                "maximumPeriod": 21600
+                "updateInterval": 720,
+                "stepInterval": 1800,
+                "maximumPeriod": 432000
             },
             "profit2": {
                 "enabled": true,
                 "updateInterval": 720,
                 "stepInterval": 1800,
                 "maximumPeriod": 432000
-            },
-            "profit3": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 60,
-                "maximumPeriod": 7200
             }
         },
         "user": {

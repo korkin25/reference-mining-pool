@@ -30,39 +30,28 @@
         "ports": [
             {
                 "port": 15831,
-                "difficulty": 100000,
-                "desc": "CPU",
+                "difficulty": 4,
+                "desc": "GPU",
                 "varDiff": true
             }
         ],
         "varDiff": {
-            "minDiff": 1000,
-            "maxDiff": 10000000,
+            "minDiff": 4,
+            "maxDiff": 1000,
             "targetTime": 30,
             "variancePercent": 30,
-            "maxJump": 30
+            "retargetTime": 60,
+            "maxJump": 100
         },
         "fixedDiff": {
             "enabled": true,
             "addressSeparator": "."
-        },
-        "shareTrust": {
-            "enabled": false,
-            "min": 200,
-            "stepDown": 3,
-            "threshold": 10,
-            "penalty": 30
         },
         "banning": {
             "enabled": false,
             "time": 600,
             "invalidPercent": 25,
             "checkThreshold": 30
-        },
-        "slushMining": {
-            "enabled": false,
-            "weight": 120,
-            "lastBlockCheckRate": 1
         }
     },
 
@@ -136,12 +125,6 @@
                 "stepInterval": 1800,
                 "maximumPeriod": 432000
             },
-            "workers": {
-                "enabled": true,
-                "updateInterval": 720,
-                "stepInterval": 1800,
-                "maximumPeriod": 432000
-            },
             "difficulty": {
                 "enabled": true,
                 "updateInterval": 720,
@@ -154,41 +137,23 @@
                 "stepInterval": 150,
                 "maximumPeriod": 21600
             },
-            "difficulty3": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 60,
-                "maximumPeriod": 7200
-            },
-            "price": {
-                "enabled": true,
-                "updateInterval": 720,
-                "stepInterval": 1800,
-                "maximumPeriod": 432000
-            },
             "priceUSD": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 720,
                 "stepInterval": 7200,
                 "maximumPeriod": 432000
             },
-            "profit": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 300,
-                "maximumPeriod": 21600
-            },
-            "profit2": {
+            "luck": {
                 "enabled": true,
                 "updateInterval": 720,
                 "stepInterval": 1800,
                 "maximumPeriod": 432000
             },
-            "profit3": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 60,
-                "maximumPeriod": 7200
+            "profit2": {
+                "enabled": false,
+                "updateInterval": 720,
+                "stepInterval": 1800,
+                "maximumPeriod": 432000
             }
         },
         "user": {
